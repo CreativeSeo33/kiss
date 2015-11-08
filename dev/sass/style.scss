@@ -17,10 +17,10 @@ nav {
 	min-height: 80px;
 	position: relative;	
 	border-bottom: 1px #e9edf1 solid;
-	box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+	//box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
 }
 .logo {
-	padding: 15px 0;
+	padding: 5px 0;
 }
 .nav {
 	&_phone {
@@ -28,6 +28,7 @@ nav {
 		font-weight: 300;
 		line-height: 0.7em;
 		padding-top: 20px;
+		color: #002e6c;
 		span {
 			font-size: 14px;
 			color: #333;
@@ -47,35 +48,36 @@ nav {
 }
 
 .top_nav {
-	background-color: #313236;
-	color: #fff;
+	background-color: #fff;
 	min-height: 44px;
 	line-height: 44px;
 	font-size: 14px;
-	font-weight: 300;
-	border-bottom: 1px #e9edf1 solid;
+	font-weight: 300;	
+	color: #002e6c;
 	&_office {
 		i {
 			//margin-right: 3px;
-			color: #00A2D1
+			color: #00A2D1;
 		}
 	}
 	&_cabinet {
-
+		float: right;
+		margin-right: 28px;
 	}
 	&_corporate, &_private {
-		padding-top: 10px;
-		font-size: 16px;
+		a {
+		font-size: 12px;
 		font-weight: 300;
-		
+		color: #002e6c;
+		margin-right: 30px;
+		}
 		i {
 			margin-right: 3px;
 			
 		}
 	}
 	&_corporate {
-		margin-top: 10px;
-	}	 
+		}
 }
 
 //NAVBAR
