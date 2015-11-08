@@ -43,7 +43,7 @@ nav {
 }
 
 .top_nav {
-	background-color: #252525;
+	background-color: #313236;
 	color: #fff;
 	min-height: 44px;
 	line-height: 44px;
@@ -160,3 +160,162 @@ nav {
 }
 
 // СПОСОБЫ ОПЛАТЫ
+
+
+// NEWS
+
+.news {
+	
+	&-description {
+		padding: 8px;
+		&-h3 {
+			font-size: 20px;
+			font-weight: 700;
+			padding: 10px 0;
+		}
+		&-text {
+		font-size: 16px;
+		font-weight: 300;
+		padding: 10px 0 20px 0;
+		}
+	}	
+}
+
+//SLIDER
+.slider {
+ 	margin-top: 50px;
+}
+.bx-wrapper .bx-viewport {
+	border: none;
+	box-shadow: none;
+}
+.outside {
+	text-align: center;
+	margin-top: 30px;
+}
+.bx-viewport {
+	min-height: 450px;
+}
+.bx-wrapper img {
+    display: block;
+    width: 100%;
+}
+.slide {
+	box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.bx-next .right {
+	position: absolute;
+	top:40%;
+	right: -80px;
+}
+.bx-prev .left {
+	position: absolute;
+	top:40%;
+	left: -80px;
+}
+
+//SLIDER
+
+
+//ARROWS
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline:0;
+}
+
+svg {
+  padding: 5px;
+}
+
+.arrow {
+  cursor: pointer; 
+  width: 70px;
+  height: 90px;
+}
+
+
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
+
+// NEWS
+
+
+// FOOTER
+
+
+.footer {
+	background-color: #313236;
+	&-left-block {
+		background-color: #12A8CB;
+		position: relative;
+		height: 100%;		
+		&-logo {
+			//@include centerer(true,true);
+			padding: 30px;
+		}
+	}
+	&-right-block {
+		
+		height: 173px;
+		padding: 30px 0;
+		height: 100%;
+		&-link {
+			color: #fff;
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+			//text-align: center;
+			ul {
+				li {
+					list-style-type: none;
+					display: inline-block;
+					padding: 30px 30px 10px 30px;
+				}
+			}
+		}
+	}
+	&-social {
+		padding: 8px 70px;
+		color: #6E6F73;
+		font-size: 16px;
+		i {
+			margin: 0 5px;
+		}
+	}
+	&-copyright {
+		color: #6E6F73;
+		font-size: 16px;
+		font-weight: 300;
+		padding: 20px 0 0 70px;
+	}
+	
+}
+
+
+// FOOTER
