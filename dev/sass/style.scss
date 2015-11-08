@@ -206,7 +206,7 @@ nav {
   padding: 0;
   list-style-type: none;
   color: #333;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
   
   li {
@@ -226,6 +226,7 @@ nav {
     display: block;
     margin-top: .5em;
     font-weight: 300;
+    font-size: 18px;
   }
 }
 
@@ -276,12 +277,12 @@ nav {
 
 .bx-next .right {
 	position: absolute;
-	top:40%;
+	top:43%;
 	right: -80px;
 }
 .bx-prev .left {
 	position: absolute;
-	top:40%;
+	top:43%;
 	left: -80px;
 }
 
