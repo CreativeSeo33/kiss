@@ -1,0 +1,74 @@
+<svg version="1.1"
+		 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+		 x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
+		 xml:space="preserve" onload="drawCircle()">
+
+	<defs>
+		<ref id="percentage" param="p" default="0.5" />
+	</defs>
+
+	<script><![CDATA[
+
+		function drawCircle() {
+			var percentage = /p=[\d\.]+/.test(document.location.search) ? (parseFloat(document.location.search.replace(/.*?p=([\d\.]+).*/, '$1')) || 1) : 1;
+			var circle = document.getElementById('arc');
+			var arrow = document.getElementById('arrow');
+			var start = 0;
+			var finish = 315;
+			var offset = 90;
+			var stop = (finish * 0.43) + offset;
+			var time = 1000;
+			var step = 5;
+			var angle = start + offset;
+			var radius = 46.5;
+			var cx = 50;
+			var cy = 50;
+			var radians2 = ((finish + offset) / 180) * Math.PI;
+			var x2 = cx + Math.cos(radians2) * radius;
+			var y2 = cy + Math.sin(radians2) * radius;
+			
+			window.timer = window.setInterval(function() {
+				var radians = (angle / 180) * Math.PI;
+				var x1 = cx + Math.cos(radians) * radius;
+				var y1 = cy + Math.sin(radians) * radius;
+				if (angle <= stop && angle <= finish + offset) {
+					arrow.setAttribute('transform', 'rotate(' + (angle - offset) + ' ' + cx + ' ' + cy + ')');
+					angle += step;
+					if (angle <= finish - offset) {
+						circle.setAttribute('d', 'M'+x1+','+y1+'a'+radius+','+radius+',0,1,1,'+(x2-x1)+','+(y2-y1));
+					} else {
+						circle.setAttribute('d', 'M'+x2+','+y2+'a'+radius+','+radius+',0,0,0,'+(x1-x2)+','+(y1-y2));
+					}
+				} else {
+					window.clearInterval(window.timer);
+				}
+			}, (time / (stop - start)) * step);
+		}
+
+	]]></script>
+
+	<linearGradient id="orange-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="50" x2="100" y2="50">
+		<stop  offset="0" style="stop-color:#ED9819"/>
+		<stop  offset="1" style="stop-color:#FFD654"/>
+	</linearGradient>
+
+	<circle style="fill:url(#orange-gradient);" cx="50" cy="50" r="50"/>
+	<polygon style="fill:#FFFFFF;" points="48.938,100 49.775,50.01 85.785,84.687 85.785,100 "/>
+	<circle style="fill:#FFFFFF;" cx="50" cy="50" r="43"/>
+	<path id="arc" d="M50,96.5a46.5,46.5,0,1,1,32.3,-13" fill="none" stroke="#f7f8fb" stroke-width="7" />
+	<line style="opacity:0.18;fill:none;stroke:#231F20;stroke-miterlimit:10;" x1="50" y1="50" x2="100" y2="50"/>
+	<line style="opacity:0.18;fill:none;stroke:#231F20;stroke-miterlimit:10;" x1="50" y1="50" x2="85.352" y2="14.648"/>
+	<line style="opacity:0.18;fill:none;stroke:#231F20;stroke-miterlimit:10;" x1="50" y1="50" x2="50" y2="0"/>
+	<line style="opacity:0.18;fill:none;stroke:#231F20;stroke-miterlimit:10;" x1="50" y1="50" x2="14.648" y2="14.648"/>
+	<line style="opacity:0.18;fill:none;stroke:#231F20;stroke-miterlimit:10;" x1="50" y1="50" x2="0" y2="50"/>
+	<line style="opacity:0.18;fill:none;stroke:#231F20;stroke-miterlimit:10;" x1="50" y1="50" x2="14.648" y2="85.352"/>
+	<circle style="fill:#FFFFFF;" cx="50" cy="50" r="43"/>
+	<polyline style="opacity:0.18;fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;" points="50,50 50,75 50,100 "/>
+	<polyline style="opacity:0.18;fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;" points="50,50 67.676,67.676 
+		85.352,85.352 "/>
+	<circle style="fill:#FFFFFF;" cx="50" cy="50" r="41"/>
+	<circle style="fill:#F6F8FC;" cx="50" cy="50" r="16"/>
+	<circle style="fill:#1A8099;" cx="50" cy="50" r="5.5"/>
+	<polygon id="arrow" style="fill:#1A8099;" points="44.5,50 50,83.5 55.5,50 " transform="rotate(115 50 50)"/>
+
+</svg>

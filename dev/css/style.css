@@ -4626,35 +4626,97 @@ button.close {
   /* line 18, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
-/* line 9, ../sass/style.scss */
+/* line 1, ../sass/_buttons.scss */
+.button-large {
+  background: #FDDA24;
+  color: #000;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  transition: .6s;
+  overflow: hidden; }
+  /* line 12, ../sass/_buttons.scss */
+  .button-large:focus {
+    outline: 0; }
+  /* line 15, ../sass/_buttons.scss */
+  .button-large:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-15deg); }
+  /* line 28, ../sass/_buttons.scss */
+  .button-large:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px) skewX(-15deg); }
+  /* line 41, ../sass/_buttons.scss */
+  .button-large:hover {
+    background: #FDDA24;
+    color: #000;
+    cursor: pointer; }
+    /* line 45, ../sass/_buttons.scss */
+    .button-large:hover:before {
+      transform: translateX(300px) skewX(-15deg);
+      opacity: 0.6;
+      transition: .7s; }
+    /* line 50, ../sass/_buttons.scss */
+    .button-large:hover:after {
+      transform: translateX(300px) skewX(-15deg);
+      opacity: 1;
+      transition: .7s; }
+
+/* line 8, ../sass/style.scss */
+h2 {
+  text-align: center;
+  font-weight: 300; }
+
+/* line 16, ../sass/style.scss */
 nav {
   min-height: 80px;
   position: relative;
   border-bottom: 1px #e9edf1 solid; }
 
-/* line 14, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 .logo {
   padding: 15px 0; }
 
-/* line 18, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 .nav_phone {
   font-size: 22px;
   font-weight: 500;
   line-height: 0.7em;
   padding-top: 20px; }
-  /* line 23, ../sass/style.scss */
+  /* line 30, ../sass/style.scss */
   .nav_phone span {
     font-size: 14px;
     color: #333;
     font-weight: 300; }
-/* line 29, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .nav_social {
   float: right; }
-  /* line 32, ../sass/style.scss */
+  /* line 39, ../sass/style.scss */
   .nav_social i {
     padding-right: 6px; }
 
-/* line 38, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .top_nav {
   background-color: #252525;
   color: #fff;
@@ -4663,17 +4725,87 @@ nav {
   font-size: 14px;
   font-weight: 300;
   border-bottom: 1px #e9edf1 solid; }
-  /* line 47, ../sass/style.scss */
+  /* line 54, ../sass/style.scss */
   .top_nav_office i {
     color: #00A2D1; }
-  /* line 55, ../sass/style.scss */
+  /* line 62, ../sass/style.scss */
   .top_nav_corporate, .top_nav_private {
     padding-top: 10px;
     font-size: 16px;
     font-weight: 300; }
-    /* line 60, ../sass/style.scss */
+    /* line 67, ../sass/style.scss */
     .top_nav_corporate i, .top_nav_private i {
       margin-right: 3px; }
-  /* line 65, ../sass/style.scss */
+  /* line 72, ../sass/style.scss */
   .top_nav_corporate {
     margin-top: 10px; }
+
+/* line 82, ../sass/style.scss */
+.tarrifs-block {
+  padding: 20px; }
+  /* line 84, ../sass/style.scss */
+  .tarrifs-block-inner {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 3px;
+    padding: 13px;
+    text-align: center;
+    transition: all 0.4s ease-out 0s; }
+    /* line 91, ../sass/style.scss */
+    .tarrifs-block-inner:hover {
+      border-color: #ffffff;
+      box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15); }
+    /* line 95, ../sass/style.scss */
+    .tarrifs-block-inner-h2 {
+      font-size: 24px;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 20px 0; }
+    /* line 101, ../sass/style.scss */
+    .tarrifs-block-inner-speed {
+      font-size: 62px;
+      font-weight: 700;
+      color: #333; }
+      /* line 105, ../sass/style.scss */
+      .tarrifs-block-inner-speed-mb {
+        font-size: 18px;
+        line-height: 1px;
+        font-weight: 300; }
+    /* line 111, ../sass/style.scss */
+    .tarrifs-block-inner-price {
+      padding: 25px 0 15px 0;
+      font-size: 62px;
+      font-weight: 700;
+      text-align: center;
+      color: #ED981A;
+      color: #333;
+      line-height: 0.7em; }
+      /* line 119, ../sass/style.scss */
+      .tarrifs-block-inner-price-h3 {
+        font-size: 16px;
+        font-weight: 300;
+        color: #333;
+        padding-bottom: 5px; }
+      /* line 126, ../sass/style.scss */
+      .tarrifs-block-inner-price i {
+        font-size: 32px; }
+    /* line 130, ../sass/style.scss */
+    .tarrifs-block-inner-button {
+      padding: 15px;
+      position: relative;
+      overflow: hidden; }
+
+/* line 143, ../sass/style.scss */
+.advantages {
+  background-color: #F3F4EF;
+  padding: 30px 0; }
+  /* line 146, ../sass/style.scss */
+  .advantages-text {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    padding: 15px; }
+
+/* line 158, ../sass/style.scss */
+.payment {
+  padding: 30px 0; }

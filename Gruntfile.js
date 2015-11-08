@@ -35,15 +35,12 @@ grunt.initConfig({
 
 	autoprefixer: {
 		single_file: {
-			src: 'prod/css/style.min.css',
-			dest: 'prod/css/style.min.css'
+			src: 'dev/css/style.css',
+			dest: 'dev/css/style.css'
 		}  
 	},
 
-	jshint: {
-		options: {jshintrc: true},
-		all: 'dev/js/common.js'
-	},
+	
 
 	uglify: {
 	  my_target: {
@@ -53,18 +50,7 @@ grunt.initConfig({
 	  }
 	},
 
-	fixmyjs: {
-		options: {
-		  config: 'dev/.jshintrc', 
-		  indentpref: 'spaces'
-		},
-		test: {
-		  files: [
-			{src: ['dev/js/common.js'], dest: 'dev/js/common.js', ext: '.js'}
-		  ]
-		}
-	},
-
+	
 	copy: {
 		main: {files: [{expand: true, cwd: 'dev/', src: ['**/*.php', '!config.php', 'libs/font-awesome/fonts','.htaccess'], dest: 'prod/'},
 				{expand: true, cwd: 'dev/libs/font-awesome/fonts', src: ['**'], dest: 'prod/fonts'}]
@@ -95,56 +81,10 @@ grunt.initConfig({
 			files: ['css/*.css'],
 			tasks: ['cssmin']
 		}
-	},
-
-	processhtml: {
-	  dev:{
-		options: {
-			process: true,
-		},
-		files: [{
-			expand: true,     
-			cwd: 'dev/',   
-			src: ['blocks/meta.php', 'blocks/footer.php'],
-			dest: 'prod/'  
-		}]
-	  }  
-	},
-
-	wiredep: {
-	  task: {
-		src: ['dev/blocks/meta.php'],
-		options: {}
-	  }
-	},
-
-	critical: {
-		test: {
-			options: {
-				base: './',
-				css: ['prod/css/style.min.css'],
-				width: 1600,
-				height: 1500
-			},
-			files: [{                                   
-				expand: true,
-				cwd: 'prod/',
-				src: ['index.html'],
-				dest: 'prod/'
-			}]
-		}
-	},
-
-	imagemin: {
-		dynamic: {
-		  files: [{
-			expand: true,
-			cwd: 'dev/',
-			src: ['**/*.{png,jpg,gif,JPG}','!libs/*.{png,jpg,gif,JPG}'],
-			dest: 'prod/'
-		  }]
-		}
 	}
+
+	
+	
 	
 
 });
@@ -152,26 +92,12 @@ grunt.initConfig({
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-include-replace');
-    grunt.loadNpmTasks('grunt-processhtml');
-    grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-contrib-watch');    
     grunt.loadNpmTasks('grunt-csso');
-    grunt.loadNpmTasks('grunt-wiredep');
-    grunt.loadNpmTasks('grunt-critical');
     grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-fixmyjs');
     grunt.loadNpmTasks('grunt-uncss');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-csslint');
-    
-    grunt.registerTask('default', ['concat']);
-    grunt.registerTask('all', ['postcss']);
-    grunt.registerTask('css', ['csso', 'autoprefixer']);
-	grunt.registerTask('js', ['uglify']);
-	grunt.registerTask('php', ['copy', 'processhtml', 'htmlmin']);
-    grunt.registerTask('img', ['imagemin']);
+	
+    grunt.registerTask('default', ['autoprefixer']);  
 	  
 };

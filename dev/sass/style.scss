@@ -1,8 +1,15 @@
 @import "variables";
 @import "bootstrap";
 @import "mixins";
+@import "buttons";
 @import "../libs/font-awesome/css/font-awesome.min.css";
 @import "../libs/fontello/css/fontello.css";
+
+h2 {
+	text-align: center;
+	//text-transform: uppercase;
+	font-weight: 300;
+}
 
 //NAVBAR
 
@@ -68,3 +75,88 @@ nav {
 }
 
 //NAVBAR
+
+//ТАРИФЫ
+
+.tarrifs {
+	&-block {
+		padding: 20px;
+		&-inner {
+			border: 1px solid rgba(0, 0, 0, 0.12);
+			background: #ffffff none repeat scroll 0 0;
+		    border-radius: 3px;		  
+		    padding: 13px;
+		    text-align: center;
+		    transition: all 0.4s ease-out 0s;
+		    &:hover {
+		    	border-color: #ffffff;
+    			box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+		    }
+		    &-h2 {
+		    	font-size: 24px;
+		    	font-weight: 500;
+		    	text-transform: uppercase;
+		    	padding: 20px 0;
+		    }
+		    &-speed {
+		    	font-size: 62px;
+				font-weight: 700;
+				color: #333;
+				&-mb {
+					font-size: 18px;
+					line-height: 1px;
+					font-weight: 300;
+				}		    	
+		    }
+		    &-price {
+		    	padding: 25px 0 15px 0;
+		    	font-size: 62px;
+				font-weight: 700;
+				text-align: center;
+				color: #ED981A;
+				color: #333;
+				line-height: 0.7em;
+		    	&-h3 {
+		    		font-size: 16px;
+		    		font-weight: 300;	
+		    		color: #333;
+		    		padding-bottom: 5px;	
+		    		    		
+		    	}
+		    	i {
+		    		font-size: 32px;
+		    	}
+		    }
+		    &-button {
+		    	padding: 15px;
+		    	position: relative;
+		    	overflow: hidden;
+		    }
+		}
+	}
+}
+
+//ТАРИФЫ
+
+// ПРЕИМУЩЕСТВА
+
+.advantages {
+	background-color: #F3F4EF;
+	padding: 30px 0;
+	&-text {
+		font-size: 22px;
+		font-weight: 300;
+		text-align: center;
+		padding: 15px;
+	}
+}
+
+// ПРЕИМУЩЕСТВА
+
+// СПОСОБЫ ОПЛАТЫ
+
+.payment {
+	padding: 30px 0;
+}
+
+// СПОСОБЫ ОПЛАТЫ
