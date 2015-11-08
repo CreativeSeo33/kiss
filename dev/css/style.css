@@ -310,11 +310,15 @@ th {
     border: 1px solid #ddd !important; } }
 /* line 11, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* line 14, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* line 22, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
@@ -379,6 +383,7 @@ img {
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -2011,6 +2016,8 @@ label {
 
 /* line 47, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* line 52, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
@@ -2063,13 +2070,16 @@ output {
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   /* line 57, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
   .form-control:focus {
     border-color: #66afe9;
     outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
   /* line 103, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss */
   .form-control::-moz-placeholder {
@@ -2380,10 +2390,12 @@ select[multiple].input-lg,
 /* line 21, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .has-success .form-control {
   border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   /* line 24, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
   .has-success .form-control:focus {
     border-color: #2b542c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
 /* line 31, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .has-success .input-group-addon {
@@ -2405,10 +2417,12 @@ select[multiple].input-lg,
 /* line 21, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .has-warning .form-control {
   border-color: #8a6d3b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   /* line 24, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
   .has-warning .form-control:focus {
     border-color: #66512c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
 /* line 31, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .has-warning .input-group-addon {
@@ -2430,10 +2444,12 @@ select[multiple].input-lg,
 /* line 21, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .has-error .form-control {
   border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   /* line 24, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
   .has-error .form-control:focus {
     border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
 /* line 31, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .has-error .input-group-addon {
@@ -2558,8 +2574,7 @@ select[multiple].input-lg,
   font-weight: "Roboto", sans-serif;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
@@ -2585,12 +2600,14 @@ select[multiple].input-lg,
   .btn:active, .btn.active {
     outline: 0;
     background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
   /* line 46, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
   .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
     cursor: not-allowed;
     opacity: 0.65;
     filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
     box-shadow: none; }
 
 /* line 58, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
@@ -2827,6 +2844,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
   /* line 101, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link {
     background-color: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none; }
   /* line 109, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
@@ -2881,6 +2899,7 @@ input[type="button"].btn-block {
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear; }
   /* line 13, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_component-animations.scss */
   .fade.in {
@@ -2952,6 +2971,7 @@ tbody.collapse.in {
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box; }
   /* line 54, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss */
@@ -3162,9 +3182,11 @@ tbody.collapse.in {
 
 /* line 116, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_button-groups.scss */
 .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
   /* line 120, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_button-groups.scss */
   .btn-group.open .dropdown-toggle.btn-link {
+    -webkit-box-shadow: none;
     box-shadow: none; }
 
 /* line 127, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_button-groups.scss */
@@ -3762,6 +3784,7 @@ tbody.collapse.in {
   padding: 10px 15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   margin-top: 33px;
   margin-bottom: 33px; }
@@ -3830,6 +3853,7 @@ tbody.collapse.in {
       margin-right: 0;
       padding-top: 0;
       padding-bottom: 0;
+      -webkit-box-shadow: none;
       box-shadow: none; } }
 
 /* line 327, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -4140,6 +4164,7 @@ tbody.collapse.in {
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
   /* line 15, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_wells.scss */
   .well blockquote {
@@ -4202,13 +4227,17 @@ button.close {
   .modal.fade .modal-dialog {
     -webkit-transform: translate(0, -25%);
     -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
     transform: translate(0, -25%);
     -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
     transition: transform 0.3s ease-out; }
   /* line 36, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss */
   .modal.in .modal-dialog {
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
     transform: translate(0, 0); }
 
 /* line 38, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss */
@@ -4229,6 +4258,7 @@ button.close {
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: 0; }
@@ -4310,6 +4340,7 @@ button.close {
 
   /* line 140, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss */
   .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
 
   /* line 145, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss */
@@ -4606,8 +4637,7 @@ button.close {
   border-radius: 4px;
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
-  -webkit-transition: .6s;
-          transition: .6s;
+  transition: .6s;
   overflow: hidden; }
   /* line 13, ../sass/_buttons.scss */
   .button-large:focus {
@@ -4624,11 +4654,8 @@ button.close {
     top: 0;
     opacity: .5;
     overflow: hidden;
-    -webkit-filter: blur(30px);
-            filter: blur(30px);
-    -webkit-transform: translateX(-100px) skewX(-15deg);
-        -ms-transform: translateX(-100px) skewX(-15deg);
-            transform: translateX(-100px) skewX(-15deg); }
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-15deg); }
   /* line 30, ../sass/_buttons.scss */
   .button-large:after {
     content: '';
@@ -4640,11 +4667,8 @@ button.close {
     left: 30px;
     top: 0;
     opacity: 0;
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-    -webkit-transform: translateX(-100px) skewX(-15deg);
-        -ms-transform: translateX(-100px) skewX(-15deg);
-            transform: translateX(-100px) skewX(-15deg); }
+    filter: blur(5px);
+    transform: translateX(-100px) skewX(-15deg); }
   /* line 43, ../sass/_buttons.scss */
   .button-large:hover {
     background: #FDDA24;
@@ -4652,20 +4676,14 @@ button.close {
     cursor: pointer; }
     /* line 47, ../sass/_buttons.scss */
     .button-large:hover:before {
-      -webkit-transform: translateX(300px) skewX(-15deg);
-          -ms-transform: translateX(300px) skewX(-15deg);
-              transform: translateX(300px) skewX(-15deg);
+      transform: translateX(300px) skewX(-15deg);
       opacity: 0.6;
-      -webkit-transition: .7s;
-              transition: .7s; }
+      transition: .7s; }
     /* line 52, ../sass/_buttons.scss */
     .button-large:hover:after {
-      -webkit-transform: translateX(300px) skewX(-15deg);
-          -ms-transform: translateX(300px) skewX(-15deg);
-              transform: translateX(300px) skewX(-15deg);
+      transform: translateX(300px) skewX(-15deg);
       opacity: 1;
-      -webkit-transition: .7s;
-              transition: .7s; }
+      transition: .7s; }
 
 /* line 8, ../sass/style.scss */
 h2 {
@@ -4729,19 +4747,13 @@ nav {
   padding: 30px; }
   /* line 84, ../sass/style.scss */
   .tarrifs-block-inner {
-    border: 1px solid rgba(0, 0, 0, 0.12);
     background: #ffffff none repeat scroll 0 0;
     border-radius: 3px;
     padding: 14px 14px 0 14px;
     text-align: center;
-    -webkit-transition: all 0.4s ease-out 0s;
-            transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
     border-color: #ffffff;
     box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15); }
-    /* line 93, ../sass/style.scss */
-    .tarrifs-block-inner:hover {
-      border-color: #ffffff;
-      box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15); }
     /* line 97, ../sass/style.scss */
     .tarrifs-block-inner-h2 {
       font-size: 24px;
@@ -4788,166 +4800,166 @@ nav {
 /* line 149, ../sass/style.scss */
 .advantages {
   background-color: #F3F4EF;
-  padding: 30px 0; }
+  padding: 50px 0; }
   /* line 152, ../sass/style.scss */
   .advantages-text {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
     text-align: center;
     padding: 15px; }
+  /* line 158, ../sass/style.scss */
+  .advantages-icon {
+    padding: 40px 0 20px 0; }
 
-/* line 164, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .payment {
   padding: 30px 0; }
-  /* line 166, ../sass/style.scss */
+  /* line 169, ../sass/style.scss */
   .payment-title {
     font-size: 22px;
     font-weight: 300;
     text-align: center;
     padding: 15px; }
-  /* line 172, ../sass/style.scss */
+  /* line 175, ../sass/style.scss */
   .payment h2 {
     padding-bottom: 20px; }
 
-/* line 182, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .connect {
   background-color: #F3F4EF;
   padding: 30px 0; }
 
-/* line 194, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .news-description {
   padding: 15px; }
-  /* line 196, ../sass/style.scss */
+  /* line 199, ../sass/style.scss */
   .news-description-h3 {
     font-size: 20px;
     font-weight: 700;
     padding: 10px 0; }
-  /* line 201, ../sass/style.scss */
+  /* line 204, ../sass/style.scss */
   .news-description-text {
     font-size: 16px;
     font-weight: 300;
     padding: 10px 0 20px 0; }
 
-/* line 210, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .slider {
   margin-top: 50px; }
 
-/* line 213, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .bx-wrapper .bx-viewport {
   border: none;
   box-shadow: none; }
 
-/* line 217, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .outside {
   text-align: center;
   margin-top: 30px; }
 
-/* line 221, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .bx-viewport {
   min-height: 450px; }
 
-/* line 224, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .bx-wrapper img {
   display: block;
   width: 100%; }
 
-/* line 228, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .slide {
   box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
   overflow: hidden; }
 
-/* line 233, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 .bx-next .right {
   position: absolute;
   top: 40%;
   right: -80px; }
 
-/* line 238, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .bx-prev .left {
   position: absolute;
   top: 40%;
   left: -80px; }
 
-/* line 248, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 button {
   -webkit-appearance: none;
   background: transparent;
   border: 0;
   outline: 0; }
 
-/* line 255, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 svg {
   padding: 5px; }
 
-/* line 259, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 .arrow {
   cursor: pointer;
   width: 70px;
   height: 90px; }
 
-/* line 267, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .left:hover polyline,
 .left:focus polyline {
   stroke-width: 3; }
 
-/* line 272, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .left:active polyline {
   stroke-width: 6;
-  -webkit-transition: all 100ms ease-in-out;
-          transition: all 100ms ease-in-out; }
+  transition: all 100ms ease-in-out; }
 
-/* line 277, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 .right:hover polyline,
 .right:focus polyline {
   stroke-width: 3; }
 
-/* line 282, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .right:active polyline {
   stroke-width: 6;
-  -webkit-transition: all 100ms ease-in-out;
-          transition: all 100ms ease-in-out; }
+  transition: all 100ms ease-in-out; }
 
-/* line 287, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 polyline {
-  -webkit-transition: all 250ms ease-in-out;
-          transition: all 250ms ease-in-out; }
+  transition: all 250ms ease-in-out; }
 
-/* line 297, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .footer {
   background-color: #313236; }
-  /* line 299, ../sass/style.scss */
+  /* line 302, ../sass/style.scss */
   .footer-left-block {
     background-color: #12A8CB;
     position: relative;
     height: 100%; }
-    /* line 303, ../sass/style.scss */
+    /* line 306, ../sass/style.scss */
     .footer-left-block-logo {
       padding: 30px; }
-  /* line 308, ../sass/style.scss */
+  /* line 311, ../sass/style.scss */
   .footer-right-block {
     height: 173px;
     padding: 30px 0;
     height: 100%; }
-    /* line 313, ../sass/style.scss */
+    /* line 316, ../sass/style.scss */
     .footer-right-block-link {
       color: #fff;
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase; }
-      /* line 320, ../sass/style.scss */
+      /* line 323, ../sass/style.scss */
       .footer-right-block-link ul li {
         list-style-type: none;
         display: inline-block;
         padding: 30px 30px 10px 30px; }
-  /* line 328, ../sass/style.scss */
+  /* line 331, ../sass/style.scss */
   .footer-social {
     padding: 8px 70px;
     color: #6E6F73;
     font-size: 16px; }
-    /* line 332, ../sass/style.scss */
+    /* line 335, ../sass/style.scss */
     .footer-social i {
       margin: 0 5px; }
-  /* line 336, ../sass/style.scss */
+  /* line 339, ../sass/style.scss */
   .footer-copyright {
     color: #6E6F73;
     font-size: 16px;
