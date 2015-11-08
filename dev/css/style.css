@@ -4809,138 +4809,149 @@ nav {
 /* line 158, ../sass/style.scss */
 .payment {
   padding: 30px 0; }
+  /* line 160, ../sass/style.scss */
+  .payment-title {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    padding: 15px; }
 
-/* line 169, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
+.connect {
+  background-color: #F3F4EF;
+  padding: 30px 0; }
+
+/* line 185, ../sass/style.scss */
 .news-description {
-  padding: 8px; }
-  /* line 171, ../sass/style.scss */
+  padding: 15px; }
+  /* line 187, ../sass/style.scss */
   .news-description-h3 {
     font-size: 20px;
     font-weight: 700;
     padding: 10px 0; }
-  /* line 176, ../sass/style.scss */
+  /* line 192, ../sass/style.scss */
   .news-description-text {
     font-size: 16px;
     font-weight: 300;
     padding: 10px 0 20px 0; }
 
-/* line 185, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .slider {
   margin-top: 50px; }
 
-/* line 188, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .bx-wrapper .bx-viewport {
   border: none;
   box-shadow: none; }
 
-/* line 192, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .outside {
   text-align: center;
   margin-top: 30px; }
 
-/* line 196, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .bx-viewport {
   min-height: 450px; }
 
-/* line 199, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .bx-wrapper img {
   display: block;
   width: 100%; }
 
-/* line 203, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .slide {
   box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
   overflow: hidden; }
 
-/* line 208, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .bx-next .right {
   position: absolute;
   top: 40%;
   right: -80px; }
 
-/* line 213, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .bx-prev .left {
   position: absolute;
   top: 40%;
   left: -80px; }
 
-/* line 223, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 button {
   -webkit-appearance: none;
   background: transparent;
   border: 0;
   outline: 0; }
 
-/* line 230, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 svg {
   padding: 5px; }
 
-/* line 234, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .arrow {
   cursor: pointer;
   width: 70px;
   height: 90px; }
 
-/* line 242, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .left:hover polyline,
 .left:focus polyline {
   stroke-width: 3; }
 
-/* line 247, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .left:active polyline {
   stroke-width: 6;
   transition: all 100ms ease-in-out; }
 
-/* line 252, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 .right:hover polyline,
 .right:focus polyline {
   stroke-width: 3; }
 
-/* line 257, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .right:active polyline {
   stroke-width: 6;
   transition: all 100ms ease-in-out; }
 
-/* line 262, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 polyline {
   transition: all 250ms ease-in-out; }
 
-/* line 272, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .footer {
   background-color: #313236; }
-  /* line 274, ../sass/style.scss */
+  /* line 290, ../sass/style.scss */
   .footer-left-block {
     background-color: #12A8CB;
     position: relative;
     height: 100%; }
-    /* line 278, ../sass/style.scss */
+    /* line 294, ../sass/style.scss */
     .footer-left-block-logo {
       padding: 30px; }
-  /* line 283, ../sass/style.scss */
+  /* line 299, ../sass/style.scss */
   .footer-right-block {
     height: 173px;
     padding: 30px 0;
     height: 100%; }
-    /* line 288, ../sass/style.scss */
+    /* line 304, ../sass/style.scss */
     .footer-right-block-link {
       color: #fff;
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase; }
-      /* line 295, ../sass/style.scss */
+      /* line 311, ../sass/style.scss */
       .footer-right-block-link ul li {
         list-style-type: none;
         display: inline-block;
         padding: 30px 30px 10px 30px; }
-  /* line 303, ../sass/style.scss */
+  /* line 319, ../sass/style.scss */
   .footer-social {
     padding: 8px 70px;
     color: #6E6F73;
     font-size: 16px; }
-    /* line 307, ../sass/style.scss */
+    /* line 323, ../sass/style.scss */
     .footer-social i {
       margin: 0 5px; }
-  /* line 311, ../sass/style.scss */
+  /* line 327, ../sass/style.scss */
   .footer-copyright {
     color: #6E6F73;
     font-size: 16px;
