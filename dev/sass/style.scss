@@ -28,7 +28,7 @@ nav {
 		font-weight: 300;
 		line-height: 0.7em;
 		padding-top: 20px;
-		color: #002e6c;
+		color: #333;
 		span {
 			font-size: 14px;
 			color: #333;
@@ -37,7 +37,7 @@ nav {
 	}
 	&_social {
 		//padding-top: 5px;
-		float: right;
+		float: left;
 		i {
 			padding-right: 6px;
 		}
@@ -47,13 +47,25 @@ nav {
 	}
 }
 
+.descr {
+	font-size: 18px;
+	font-weight: 400;
+	color: #00A2D0;
+	text-align: left;
+	margin: 10px 0;
+}
+.logo-border {
+	border-left: 1px solid #00A2D0;
+	margin: 12px 0;
+}
+
 .top_nav {
 	background-color: #fff;
 	min-height: 44px;
 	line-height: 44px;
 	font-size: 14px;
 	font-weight: 300;	
-	color: #002e6c;
+	color: #333;
 	&_office {
 		i {
 			//margin-right: 3px;
@@ -68,7 +80,7 @@ nav {
 		a {
 		font-size: 12px;
 		font-weight: 300;
-		color: #002e6c;
+		color: #333;
 		margin-right: 30px;
 		}
 		i {
