@@ -133,10 +133,13 @@ nav {
 		    	}
 		    }
 		    &-button {
-		    	padding: 15px 15px 35px 15px;
 		    	position: relative;
-		    	overflow: hidden;
-		    	background-color: #F3F4EF;		    	
+		    	overflow: hidden;		    	
+		    	max-width: 200px;
+		    	&-wrap {
+		    		padding: 15px 15px 35px 15px;
+		    		background-color: #F3F4EF;	
+		    	}	    	
 		    }
 		}
 	}
@@ -186,7 +189,39 @@ nav {
 	background-color: #F3F4EF;
 	padding: 30px 0;
 }
-
+.process {
+  width: 900px;
+  margin: 3em auto;
+  cursor: default;
+}
+.process-items {
+  display: table;
+  margin: 0 0 10px;
+  padding: 0;
+  list-style-type: none;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  
+  li {
+    display: table-cell;
+    width: 25%;
+    vertical-align: bottom;
+    padding: 0 .5em;
+    transform: scale(0.85) translateY(40px);
+    transform-origin: bottom center;
+    transition: transform .5s;
+    font-weight: 700;
+    &.active {
+      transform: scale(1) translateY(0);
+    }
+  }
+  p {
+    display: block;
+    margin-top: .5em;
+    font-weight: 300;
+  }
+}
 
 // КАК ПОДКЛЮЧИТЬСЯ
 
