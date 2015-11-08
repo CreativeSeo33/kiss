@@ -24,7 +24,7 @@ nav {
 }
 .nav {
 	&_phone {
-		font-size: 32px;
+		font-size: 28px;
 		font-weight: 300;
 		line-height: 0.7em;
 		padding-top: 20px;
@@ -40,6 +40,9 @@ nav {
 		i {
 			padding-right: 6px;
 		}
+	}
+	.icon-key {
+		color: #FDDA24;
 	}
 }
 
@@ -332,6 +335,15 @@ polyline {
 
 // NEWS
 
+.callback {
+	font-size: 52px;
+	font-weight: 300;
+	padding: 60px 0;
+	text-align: center;	
+	button {
+		vertical-align: text-top;
+	}
+}
 
 // FOOTER
 
@@ -392,7 +404,7 @@ polyline {
 .scrollUpButton {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     bottom: 50px;
-    color: #EF9919;
+    color: #FDDA24;
     display: none;
     font-size: 1.5em;
     padding: 5px 10px;
