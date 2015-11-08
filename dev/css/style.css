@@ -4762,19 +4762,18 @@ nav {
     .tarrifs-block-inner-h2 {
       font-size: 24px;
       font-weight: 500;
-      text-transform: uppercase;
       padding: 20px 0; }
-    /* line 107, ../sass/style.scss */
+    /* line 106, ../sass/style.scss */
     .tarrifs-block-inner-speed {
       font-size: 62px;
       font-weight: 700;
       color: #333; }
-      /* line 112, ../sass/style.scss */
+      /* line 111, ../sass/style.scss */
       .tarrifs-block-inner-speed-mb {
         font-size: 18px;
         line-height: 1px;
         font-weight: 300; }
-    /* line 118, ../sass/style.scss */
+    /* line 117, ../sass/style.scss */
     .tarrifs-block-inner-price {
       padding: 15px 0 15px 0;
       margin-top: 15px;
@@ -4785,65 +4784,65 @@ nav {
       color: #333;
       line-height: 0.7em;
       background-color: #F3F4EF; }
-      /* line 128, ../sass/style.scss */
+      /* line 127, ../sass/style.scss */
       .tarrifs-block-inner-price-h3 {
         font-size: 16px;
         font-weight: 300;
         color: #333;
         padding-bottom: 5px; }
-      /* line 135, ../sass/style.scss */
+      /* line 134, ../sass/style.scss */
       .tarrifs-block-inner-price i {
         font-size: 32px; }
-    /* line 139, ../sass/style.scss */
+    /* line 138, ../sass/style.scss */
     .tarrifs-block-inner-button {
       position: relative;
       overflow: hidden;
       max-width: 200px; }
-      /* line 143, ../sass/style.scss */
+      /* line 142, ../sass/style.scss */
       .tarrifs-block-inner-button-wrap {
         padding: 15px 15px 35px 15px;
         background-color: #F3F4EF; }
 
-/* line 156, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .advantages {
   background-color: #F3F4EF;
   padding: 50px 0; }
-  /* line 159, ../sass/style.scss */
+  /* line 158, ../sass/style.scss */
   .advantages-text {
     font-size: 20px;
     font-weight: 300;
     text-align: center;
     padding: 15px; }
-  /* line 165, ../sass/style.scss */
+  /* line 164, ../sass/style.scss */
   .advantages-icon {
     padding: 40px 0 20px 0; }
 
-/* line 174, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .payment {
   padding: 30px 0; }
-  /* line 176, ../sass/style.scss */
+  /* line 175, ../sass/style.scss */
   .payment-title {
     font-size: 22px;
     font-weight: 300;
     text-align: center;
     padding: 15px; }
-  /* line 182, ../sass/style.scss */
+  /* line 181, ../sass/style.scss */
   .payment h2 {
     padding-bottom: 20px; }
 
-/* line 192, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .connect {
   background-color: #F3F4EF;
   padding: 30px 0;
   box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15); }
 
-/* line 199, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .process {
   width: 900px;
   margin: 3em auto;
   cursor: default; }
 
-/* line 204, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .process-items {
   display: table;
   margin: 0 0 10px;
@@ -4852,7 +4851,7 @@ nav {
   color: #333;
   font-size: 18px;
   text-align: center; }
-  /* line 213, ../sass/style.scss */
+  /* line 212, ../sass/style.scss */
   .process-items li {
     display: table-cell;
     width: 25%;
@@ -4862,166 +4861,166 @@ nav {
     transform-origin: bottom center;
     transition: transform .5s;
     font-weight: 700; }
-    /* line 222, ../sass/style.scss */
+    /* line 221, ../sass/style.scss */
     .process-items li.active {
       transform: scale(1) translateY(0); }
-  /* line 226, ../sass/style.scss */
+  /* line 225, ../sass/style.scss */
   .process-items p {
     display: block;
     margin-top: .5em;
     font-weight: 300; }
 
-/* line 237, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 .news {
   padding: 30px 0 10px 0; }
-  /* line 239, ../sass/style.scss */
+  /* line 238, ../sass/style.scss */
   .news-description {
     padding: 15px; }
-    /* line 241, ../sass/style.scss */
+    /* line 240, ../sass/style.scss */
     .news-description-h3 {
       font-size: 20px;
       font-weight: 700;
       padding: 10px 0; }
-    /* line 246, ../sass/style.scss */
+    /* line 245, ../sass/style.scss */
     .news-description-text {
       font-size: 16px;
       font-weight: 300;
       padding: 10px 0 20px 0; }
 
-/* line 255, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .slider {
   margin-top: 50px; }
 
-/* line 258, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .bx-wrapper .bx-viewport {
   border: none;
   box-shadow: none; }
 
-/* line 262, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .outside {
   text-align: center;
   margin-top: 30px; }
 
-/* line 266, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .bx-viewport {
   min-height: 450px; }
 
-/* line 269, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 .bx-wrapper img {
   display: block;
   width: 100%; }
 
-/* line 273, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 .slide {
   box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
   overflow: hidden; }
 
-/* line 278, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 .bx-next .right {
   position: absolute;
   top: 40%;
   right: -80px; }
 
-/* line 283, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 .bx-prev .left {
   position: absolute;
   top: 40%;
   left: -80px; }
 
-/* line 293, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 button {
   -webkit-appearance: none;
   background: transparent;
   border: 0;
   outline: 0; }
 
-/* line 300, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 svg {
   padding: 5px; }
 
-/* line 304, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .arrow {
   cursor: pointer;
   width: 70px;
   height: 90px; }
 
-/* line 312, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .left:hover polyline,
 .left:focus polyline {
   stroke-width: 3; }
 
-/* line 317, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .left:active polyline {
   stroke-width: 6;
   transition: all 100ms ease-in-out; }
 
-/* line 322, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 .right:hover polyline,
 .right:focus polyline {
   stroke-width: 3; }
 
-/* line 327, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .right:active polyline {
   stroke-width: 6;
   transition: all 100ms ease-in-out; }
 
-/* line 332, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 polyline {
   transition: all 250ms ease-in-out; }
 
-/* line 338, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .callback {
   font-size: 52px;
   font-weight: 300;
   padding: 60px 0;
   text-align: center; }
-  /* line 343, ../sass/style.scss */
+  /* line 342, ../sass/style.scss */
   .callback button {
     vertical-align: text-top; }
 
-/* line 351, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .footer {
   background-color: #313236; }
-  /* line 353, ../sass/style.scss */
+  /* line 352, ../sass/style.scss */
   .footer-left-block {
     background-color: #12A8CB;
     position: relative;
     height: 100%; }
-    /* line 357, ../sass/style.scss */
+    /* line 356, ../sass/style.scss */
     .footer-left-block-logo {
       padding: 30px; }
-  /* line 362, ../sass/style.scss */
+  /* line 361, ../sass/style.scss */
   .footer-right-block {
     height: 173px;
     padding: 30px 0;
     height: 100%; }
-    /* line 367, ../sass/style.scss */
+    /* line 366, ../sass/style.scss */
     .footer-right-block-link {
       color: #fff;
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase; }
-      /* line 374, ../sass/style.scss */
+      /* line 373, ../sass/style.scss */
       .footer-right-block-link ul li {
         list-style-type: none;
         display: inline-block;
         padding: 30px 30px 10px 30px; }
-  /* line 382, ../sass/style.scss */
+  /* line 381, ../sass/style.scss */
   .footer-social {
     padding: 8px 70px;
     color: #6E6F73;
     font-size: 16px; }
-    /* line 386, ../sass/style.scss */
+    /* line 385, ../sass/style.scss */
     .footer-social i {
       margin: 0 5px; }
-  /* line 390, ../sass/style.scss */
+  /* line 389, ../sass/style.scss */
   .footer-copyright {
     color: #6E6F73;
     font-size: 16px;
     font-weight: 300;
     padding: 20px 0 0 70px; }
 
-/* line 404, ../sass/style.scss */
+/* line 403, ../sass/style.scss */
 .scrollUpButton {
   background: transparent none repeat scroll 0 0;
   bottom: 50px;
@@ -5034,7 +5033,7 @@ polyline {
   text-decoration: none;
   z-index: 10000; }
 
-/* line 416, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 .scrollUpButton:hover {
   color: #000000;
   opacity: 1;
