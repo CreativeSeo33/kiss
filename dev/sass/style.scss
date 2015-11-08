@@ -17,14 +17,15 @@ nav {
 	min-height: 80px;
 	position: relative;	
 	border-bottom: 1px #e9edf1 solid;
+	box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
 }
 .logo {
 	padding: 15px 0;
 }
 .nav {
 	&_phone {
-		font-size: 22px;
-		font-weight: 500;
+		font-size: 32px;
+		font-weight: 300;
 		line-height: 0.7em;
 		padding-top: 20px;
 		span {
@@ -151,7 +152,7 @@ nav {
 
 .advantages {
 	background-color: #F3F4EF;
-	padding: 50px 0;
+	padding: 50px 0;	
 	&-text {
 		font-size: 20px;
 		font-weight: 300;
@@ -188,6 +189,9 @@ nav {
 .connect {
 	background-color: #F3F4EF;
 	padding: 30px 0;
+	box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+	//background: url(../img/back.jpg) no-repeat top right;
+	//background-size: cover;
 }
 .process {
   width: 900px;
@@ -228,7 +232,7 @@ nav {
 // NEWS
 
 .news {
-	
+	padding: 30px 0 10px 0;
 	&-description {
 		padding: 15px;
 		&-h3 {
@@ -382,3 +386,25 @@ polyline {
 
 
 // FOOTER
+
+//Кнопка наверх
+
+.scrollUpButton {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    bottom: 50px;
+    color: #EF9919;
+    display: none;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    position: fixed;
+    right: 30px;
+    text-decoration: none;
+    z-index: 10000;
+}
+.scrollUpButton:hover {
+    color: #000000;
+    opacity: 1;
+    text-decoration: none;
+}
+
+//Кнопка наверх

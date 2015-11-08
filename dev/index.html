@@ -10,7 +10,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="top_nav">
+
+	<!-- <div class="top_nav">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
@@ -33,7 +34,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<nav>
 		<div class="container">
 			<div class="row">
@@ -61,7 +62,7 @@
 			</div>
 		</div>
 	</nav>
-
+	<a href="#" class="scrollUpButton"><i class="fa fa-angle-up fa-3x"></i></a>
 	<div class="tarrifs">
 		<div class="container">
 			<div class="row">
@@ -249,7 +250,7 @@
 				</div>
 				<div class="col-md-3">
 					<div class="payment-icon">
-						
+						<img src="img/visa.jpg" alt="" class="img-responsive center-block">
 					</div>
 					<div class="payment-title">
 						Оплата банковской картой
@@ -259,9 +260,11 @@
 		</div>
 	</div> <!-- СПОСОБЫ ОПЛАТЫ -->
 
-	<div class="connect"> <!-- СПОСОБЫ ОПЛАТЫ -->
+	 <!-- СПОСОБЫ ОПЛАТЫ -->
 		<div class="container">
-			<div class="row">
+		<div class="row">
+		<div class="connect">
+			
 				<h2>Как подключиться</h2>
 				<div class="process">
 				    <ol class="process-items">
@@ -567,6 +570,21 @@ var loop = function() {
   window.requestAnimationFrame(loop);
 };
 loop();
+</script>
+<script>
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollUpButton').fadeIn();
+        } else {
+            $('.scrollUpButton').fadeOut();
+        }
+    });
+    $('.scrollUpButton').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});
 </script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
